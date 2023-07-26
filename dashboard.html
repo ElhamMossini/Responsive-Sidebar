@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--styles css-->
+    <link rel="stylesheet" href="../Assets/css/dashboard.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="topbar">
+            <div class="left_header">
+                <ion-icon class="hamburger" name="menu-outline"></ion-icon>
+                <div class="logo">M-Pro</div>
+            </div>
+            <div class="search_container">
+                <ion-icon class="search_icon" name="search-outline"></ion-icon>
+                <input type="text" name="search" class="searchbox" placeholder="Search on your dashboard">
+            </div>
+            <div class="right_header">
+                <ion-icon name="person-add-outline"></ion-icon>
+                <ion-icon name="notifications-outline"></ion-icon>
+                <div class="profile_list">
+                <img src="../Assets/images/elhammossini.png" alt="User Image">
+                </div>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <div class="sidebar_content">
+                <div class="top_image_item">
+                    <img src="../Assets/images/elhammossini.png" alt="User Image">
+                    <div class="name_of_user">Elham Mossini</div>
+                    <div class="mail_of_user" mailto='elhammossini4@gmail.com'>elhammossini4@gmail.com</div>
+                </div>
+                
+                <ul class="menu">
+                    <li>
+                        <a href="" class="link active">
+                            <span class="link_icon"><ion-icon name="grid-outline"></ion-icon></span>
+                            <span class="link_title">Dashboard</span>
+                        </a>                        
+                    </li>
+                    <li class="connect_link">
+                        <a href="" class="link">
+                            <span class="link_icon"><ion-icon name="link-outline"></ion-icon></span>
+                            <span class="link_title">Connect</span>
+                        </a>
+                    </li>
+                    <li class="mini_title">
+                        PROJECTS
+                    </li>
+                    <li>
+                        <a href="" class="link">
+                            <span class="link_icon"><ion-icon name="sunny-outline"></ion-icon></span>
+                            <span class="link_title">Weather App</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link">
+                            <span class="link_icon"><ion-icon name="checkmark-outline"></ion-icon></span>
+                            <span class="link_title">Todo App</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="link">
+                            <span class="link_icon"><ion-icon name="time-outline"></ion-icon></span>
+                            <span class="link_title">Clock DT</span>
+                        </a>
+                    </li>
+                    <li class="api_link">
+                        <a href="" class="link">
+                            <span class="link_icon"><ion-icon name="settings-outline"></ion-icon></span>
+                            <span class="link_title">Api</span>
+                        </a>
+                    </li>
+                    <li class="mini_title">
+                        SOURCES
+                    </li>
+                    <li>
+                        <a href="../Sources/app_sources.html" class="link">
+                            <span class="link_icon"><ion-icon name="code-working-outline"></ion-icon></span>
+                            <span class="link_title">Sources</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Sources/app_sources.html" class="link">
+                            <span class="link_icon"><ion-icon name="globe-outline"></ion-icon></span>
+                            <span class="link_title">App sources</span>
+                        </a>
+                    </li>
+
+                    <ul class="bottom_menu">
+                        <li>
+                            <a href="" class="link">
+                                <span class="link_icon"><ion-icon name="cog-outline"></ion-icon></span>
+                                <span class="link_title">Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="link">
+                                <span class="link_icon"><ion-icon name="finger-print-outline"></ion-icon></span>
+                                <span class="link_title">Privacy and Policy</span>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main">
+                <div class="main_title">Main Content</div>
+                <a href="https://github.com/ElhamMossini" target="_blank" class="github_link">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+        </main>
+
+        <footer class="footer">
+            <p>© Copyright Mossini. All rights reserved.</p>
+        </footer>
+
+
+    </div>
+    
+
+    <!--font awesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script>
+    <!--js-->
+    <script src="../Assets/js/dashboard.js"></script>
+    <!--ion icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

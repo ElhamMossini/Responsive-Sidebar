@@ -1,0 +1,371 @@
+/*==================GOOGLE FONTS================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    color: #fff;
+    background-color: #1f1f1f;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/*==================HEADER================*/
+
+
+.topbar {
+    width: 100%;
+    padding: 12px 24px 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282828;
+    box-shadow: 0 1px 9px 1px rgb(28, 28, 28);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.topbar .left_header {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .left_header .hamburger {
+    padding: 8px;
+    margin-right: 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.topbar .logo {
+    font-size: 23px;
+    font-weight: 600;
+    width: max-content;
+}
+
+.topbar .search_container {
+    width: 500px;
+    display: flex;
+}
+
+.topbar .searchbox {
+    color: #fff;
+    background-color: #282828;
+    border-radius: 4px;
+    border: 1px solid #606060;
+    outline: none;
+    width: 100%;
+    max-width: 500px;
+    height: 36px;
+    position: relative;
+    z-index: 998;
+    padding: 1px 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 0 8px;
+}
+
+.topbar .search_container .search_icon {
+    position: relative;
+    top: 10px;
+    left: 40px;
+    z-index: 999;
+    color: #606060;
+    font-size: 1rem;
+}
+
+.topbar .right_header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.topbar .right_header img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+.topbar .right_header ion-icon {
+    color: #606060;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*==================END HEADER================*/
+
+
+
+
+
+/*==================SIDEBAR================*/
+
+.sidebar {
+    width: 100%;
+    max-width: 70px;
+    height: calc(100vh - 65.59px);
+    position: fixed;
+    top: 65.59px;
+    left: 0;
+    background-color: #282828;
+    border-right: 1px solid #3e3e3e;
+    transition: .4s;
+    z-index: 995;
+    overflow: hidden;
+}
+
+.sidebar_content {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar .menu {
+    z-index: 990;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar.open {
+    max-width: 255px;
+    transition: .4s;
+}
+
+.sidebar .top_image_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #282828;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 992;
+}
+
+.sidebar.open .top_image_item {
+    padding: 35px 0;
+}
+
+.sidebar .top_image_item img {
+    max-width: 32px;
+    border-radius: 50%;
+}
+
+.sidebar.open .top_image_item img {
+    max-width: 112px;
+    height: 112px;
+    transition: .4s;
+}
+
+.sidebar .top_image_item .name_of_user {
+    display: none;
+    transition: .4s;
+}
+
+.sidebar .top_image_item .mail_of_user {
+    display: none;
+    transition: .4s;
+    color: #aaaaaa;
+}
+
+.sidebar.open .top_image_item .name_of_user {
+    display: block;
+    transition: .4s;
+    padding: 0 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-top: 14px;
+    transition: .4s;
+}
+
+.sidebar.open .top_image_item .mail_of_user {
+    display: block;
+    transition: .4s;
+    padding: 0 24px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 2px;
+    transition: .4s;
+}
+
+.sidebar .menu li .link{
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 16px;
+    position: relative;
+    gap: 15px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.sidebar .menu li .link:hover {
+    background-color: #1f1f1f;
+}
+
+.sidebar .menu li .link .link_title {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #aaaaaa;
+    display: none;
+}
+
+.sidebar .menu .mini_title {
+    display: none;
+    padding: .8rem;
+    color: #f2f2f2;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.sidebar.open .menu .mini_title {
+    display: block;
+}
+
+.sidebar .menu li .link .link_icon {
+    padding-top: .33rem;
+    font-size: 1.4rem;
+    color: #aaaaaa;
+    padding-left: .5rem;
+}
+
+.sidebar.open .menu li .link .link_icon {
+    padding-left: 0;
+}
+
+.sidebar.open .menu li .link .link_title {
+    display: block;
+}
+
+.sidebar .menu li .active {
+    background-color: #1f1f1f;
+}
+
+.sidebar .menu li .active .link_icon {
+    color: red;
+}
+
+.sidebar .menu li .active .link_title {
+    color: #fff;
+}
+
+.sidebar .menu li .active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: red;
+    width: 5px;
+    height: 100%;
+}
+
+.bottom_menu {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: #282828;
+    z-index: 991;
+    border-top: 1px solid #606060;
+}
+
+/*==================END SIDEBAR================*/
+
+
+
+
+/*==================MAIN================*/
+
+.main {
+    margin-left: 70px;
+    margin-top: 65.59px;
+    transition: .4s;
+    padding: 1rem 2rem;
+    height: 100vh;
+}
+
+.main .main_title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 32px;
+    padding-bottom: 1rem;
+}
+
+.sidebar.open ~ .main {
+    margin-left: 255px;
+    transition: .4s;
+}
+
+.main .github_link {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/*==================END MAIN================*/
+
+
+
+
+/*==================FOOTER================*/
+
+.footer {
+    margin-left: 70px;
+    width: 100%;
+    background-color: #282828;
+    transition: .4s;
+}
+
+.footer p {
+    font-size: .8rem;
+    color: #606060;
+    padding: 1.5rem 2rem;
+}
+
+.sidebar.open ~ .footer {
+    margin-left: 255px;
+    transition: .4s;
+}
+
+/*==================END FOOTER===============*/
+
+
+
+
+
+@media (max-width: 700px ){
+    .searchbox {
+        display: none;
+    }
+
+    .search_icon {
+        display: none;
+    }
+}
